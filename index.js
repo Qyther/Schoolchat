@@ -189,7 +189,7 @@ function changemenu(a) {
 	var dayms = 86400000;
 	var da = new Date();
 	da.setHours(0,0,0,0);
-	var today = da.getTime();
+	var today = da.getTime()+3600000;
 	var fact = database.ref("Fact");
 	fact.once("value",data=>{
 		var factc = parseInt(data.val()["Fact"])+1;
