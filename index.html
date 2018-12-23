@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="index.css" rel="stylesheet"></head>
+	<title>Schoolchat</title>
+</head>
+<body>
+	<div class="topbar">
+	<div class="topbartextsite">Schoolchat - v1.0.0</div>
+	<div class="topbartext">Mededelingen</div>
+	<div class="divider"></div>
+	<div class="forum">Forum<div class="forumline"></div></div>
+	<div class="settings">Instellingen<div class="settingsline"></div></div>
+</div>
+<div class="mainpart">
+</div>
+<div class="loginpart">
+	<div class="toppart"></div>
+	<div class="usernametext">Gebruikersnaam:</div>
+	<div class="passwordtext">Wachtwoord:</div>
+	<div class="tosarea">
+		<div class="topparttext">Servicevoowaarden en straffen</div>
+		<div class="termsofservice">
+		1. <b>Spammen</b> is <b><em>niet</em></b> toegestaan en is vatbaar voor een <b>kick</b> (Ook al zijn er geen administrators in de chat dan nog kan de chat log teruggezien worden)<br>
+		2. Doe <b>aardig</b>, ga <b><em>geen</em> zuurpruim</b> zijn... (Geen straf)
+	</div>
+		<div class="tos2"><div class="tostext">Teruggaan naar <span class="termsos" onclick="tos(true)">het registreren</span></div></div>
+	</div>
+	<div class="signuparea">
+		<div class="topparttext">Registeren</div>
+		<input type="text" placeholder="Bijv. GekkeGast123" class="username">
+		<input type="password" placeholder="Bijv. Wachtwoord123 ;)" class="password">
+		<div class="tos"><input type="checkbox" class="tosbox"><div class="tostext">Ik ga akkoord met <span class="termsos" onclick="tos()">de servicevoorwaarden</span></div></div>
+		<button onclick="signup()" class="submit">Registreren</button>
+		<div class="tos3"><div class="tostext">Toch maar <span class="termsos" onclick="changemenu(true)">inloggen?</span></div></div>
+	</div>
+	<div class="loginarea">
+		<div class="topparttext">Inloggen</div>
+		<input type="text" placeholder="Bijv. GekkeGast123" class="username">
+		<input type="password" placeholder="Bijv. Wachtwoord123 ;)" class="password">
+		<button onclick="login()" class="submit">Inloggen</button>
+		<div class="tos3"><div class="tostext">Liever <span class="termsos" onclick="changemenu()">registreren?</span></div></div>
+	</div>
+</div>
+<div class="fact">
+	<br><div class="toppingtext">Dagelijkse "Quote"</div>
+	<div class="currentfact">Informatie ophalen van server...</div>
+</div>
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script src="index.js"></script>

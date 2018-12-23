@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+* {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family: muli;
+}
+body {
+	background: #eee;
+}
+.signuparea {
+	display: none;
+}
+.tosarea {
+	display: none;
+}
+.loginpart {
+	width: 80vw;
+	height: 77.5vh;
+	background: #fff;
+	position: fixed;
+	left: 10vw;
+	top: 17.5vh;
+	border: 1px solid black;
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+}
+.topparttext {
+	position: fixed;
+	left: 10vw;
+	top: 9.8vh;
+	font-weight: 700;
+	font-size: 3vh;
+	color: white;
+	line-height: 8vh;
+	margin-left: 2vh;
+}
+.toppart {
+	width: calc(80vw + 2px);
+	height: 7.5vh;
+	background: #333;
+	position: fixed;
+	left: 10vw;
+	top: 10vh;
+}
+.topbar {
+	background: #222;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 7.5vh;
+	border-bottom: 1px solid #000;
+	display: flex;
+	flex-wrap: wrap;
+}
+.topbartext:hover {
+	background: #444;
+}
+.topbartext {
+	color: white;
+	font-size: 5vh;
+	margin: .75vh 0 0 10px;
+	line-height: 5.25vh;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	height: 6vh;
+	width: 17.5vw;
+	text-align: center;
+}
+.divider {
+	width: .2vw;
+	height: 5.5vh;
+	background: #111;
+	margin: 1vh 0 0 20px;
+}
+.forum:hover {
+	background: #444;
+	margin: 1.3vh 0 0 20px;
+}
+.forum:hover .forumline {
+	display: block;
+}
+.forumline, .settingsline {
+	display: none;
+	width: 100%;
+	height: 10%;
+	background: white;
+}
+.forum {
+	color: white;
+	font-size: 3vh;
+	margin: 1.5vh 0 0 20px;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	height: 4vh;
+	width: 5.5vw;
+	text-align: center;
+	display: none;
+}
+.settings:hover {
+	background: #444;
+	margin: 1.3vh 0 0 20px;
+}
+.settings:hover .settingsline {
+	display: block;
+}
+.settings {
+	color: white;
+	font-size: 3vh;
+	margin: 1.5vh 0 0 20px;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	height: 4vh;
+	width: 9vw;
+	text-align: center;
+}
+.topbartextsite {
+	color: white;
+	font-size: 3vh;
+	margin: 0 0 0 calc(85vw - 20px);
+	line-height: 7.5vh;
+	display: block;
+	position: fixed;
+	text-align: right;
+	width: 15vw;
+	font-weight: 700;
+}
+.mainpart {
+	display: none;
+}
+.username {
+	width: 45vw;
+	height: 4.5vh;
+	position: fixed;
+	top: 24vh;
+	left: 27.5vw;
+	padding-left: 8px;
+}
+.username::placeholder {
+	font-weight: 600;
+}
+.password {
+	width: 45vw;
+	height: 4.5vh;
+	position: fixed;
+	top: 34vh;
+	left: 27.5vw;
+	padding-left: 8px;
+}
+.password::placeholder {
+	font-weight: 600;
+}
+.submit {
+	width: 8vw;
+	height: 4.5vh;
+	position: fixed;
+	top: 44vh;
+	left: 46vw;
+	outline: none;
+	line-height: 4vh;
+    color: #ffffff;
+    background-color: #008cba;
+    border-color: #0079a1;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 2vh;
+}
+.tos {
+	position: fixed;
+	width: 100vw;
+	top: 39.5vh;
+	left: 0;
+}
+.tos2 {
+	position: fixed;
+	width: 100vw;
+	top: 46.5vh;
+	left: 0;
+}
+.tos3 {
+	position: fixed;
+	width: 100vw;
+	top: 53vh;
+	left: 0;
+}
+.tostext {
+	text-align: center;
+}
+.tosbox {
+	position: fixed;
+	top: 39.5vh;
+	margin-top: 5px;
+	left: 38.8vw;
+	text-align: center;
+}
+.usernametext {
+	position: fixed;
+	left: 27.5vw;
+	top: 22vh;
+	font-size: .8vw;
+	font-weight: lighter;
+}
+.passwordtext {
+	position: fixed;
+	left: 27.5vw;
+	top: 32vh;
+	font-size: .8vw;
+	font-weight: lighter;
+}
+.termsos {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.termsofservice {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 17.5vh;
+	text-align: center;
+}
+.fact {
+	position: fixed;
+	width: 100vw;
+	top: 55vh;
+	left: 0;
+}
+.toppingtext {
+	text-align: center;
+	font-size: 2vw;
+	text-decoration: underline;
+}
+.currentfact {
+	font-size: 1vw;
+	text-align: center;
+}
