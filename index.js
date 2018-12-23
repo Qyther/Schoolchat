@@ -93,9 +93,9 @@ function signup() {
 			ref.set(jsonv);
 			currentuser = [pass,user];
 			confirmedLogin();
-		} else alert("Username is already taken!");
+		} else alert("Gebruikersnaam is al gekozen!");
 	}
-	},err=>console.log("Error: "+err));
+	},err=>console.log("Fout: "+err));
 }
 
 function login() {
@@ -130,7 +130,7 @@ function login() {
 			ref.set(jsonv);
 			currentuser = [pass,user];
 			confirmedLogin();
-		} else alert("Sorry but the username or password is incorrect");
+		} else alert("Sorry maar de logingegevens zijn niet correct...");
 	}
 	},err=>console.log("Error: "+err));
 }
@@ -138,7 +138,7 @@ onbeforeunload = function (evt) {
 	var inputs = document.getElementsByTagName("input");
 	var pass = currentuser[0];
 	var user = currentuser[1];
-	var message = 'Some of the form\'s data might not be submitted yet!';
+	var message = "We moeten nog saven!";
 		ref.once("value",data=>{
 		if(data.val()!==(null||undefined)) {
 		var users = data.val();
